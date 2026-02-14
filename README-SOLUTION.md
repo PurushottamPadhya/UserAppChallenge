@@ -1,8 +1,7 @@
 # User List App
 
 ## Overview
-
-This task is intentionally small and designed to take **60 – 75 minutes**. It will be assessed as a commercial grade application. You will fix and extend a tiny SwiftUI feature that interacts with a real public API.
+Completed Task to render users list from provided API. 
 
 ## UserList App
 
@@ -12,43 +11,32 @@ The user list app is a small app that:
 - Fetches data from the public API:
     **https://jsonplaceholder.typicode.com/users**
 - Shows loading, success, and error states
-- Contains bugs
 
-## Your Tasks
+## Approach
+
+- Created Reusable APIClient that can be used for different kind of end points.
+- Used MVVM Architecture to make code clean, redable and testable.
+- Dependency injection via protocol based implementation.
+- API layer uses asyn/await to for structured concurrency. 
+- Created Declarative UI implementation using swift UI using ViewState Enum.
+- Implemented Unit test using swift testing to cover multiple test cases 
+
+
+##Tasks
 
 ### 1. Fix the Existing Bugs
 
 - Found the bug is on UserAPIClient where response expect objects containting user key which is incorrect and decoder throws typemismatched.
-- To fix this issue, we need to use array of users for decoding as [User] directly.
+- To fix this issue, I need to use array of users for decoding as [User] directly.
 - Loading and error states behave properly
 
 ### 2. Implement the Refresh feature
-
-The refresh button should:
-
-- Trigger a reload of the data
-- Show a loading state during refresh
+Implemented refresh features as refresh is tapped it will trigger the API which also showing loading screen before populating API response on the screen. 
+Adding delying to make proper loading screen visible as users will know that new data is fetching from API.
 
 ### 3. Add Unit Tests
+- Unit testing has been added. 
+- Mock data has been created and which has been compare to verify the functionality is working correctly.
 
-We want to see your approach towards testing this functionality.
-
-### 4. Add a Short README
-
-Please include a short **5 – 10 line** explanation covering:
-
-- The main bugs you identified
-- How you fixed them
-- Any design decisions or trade-offs you made
-
-## Submission
-
-Please submit a link to a repository containing your solution. We will clone the repository and run tests to ensure your solution is correct. In the interview, we discuss your changes.
-
-## Time Expectation
-
-This challenge is intentionally scoped to **60 – 75 minutes**.
-
-**NOTE: Please do not Reference the interviewing company in code.**
-
+View model functionality has been cover with the proper unit testing with the mock data provided. 
 

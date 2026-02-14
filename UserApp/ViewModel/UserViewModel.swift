@@ -3,7 +3,7 @@
 import Foundation
 import Combine
 
-enum UsersState {
+enum UsersState: Equatable {
     case idle
     case loading
     case loaded([User])
