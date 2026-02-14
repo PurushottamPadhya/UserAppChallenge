@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB633C742EECC752006DA01B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DB633C722EECC74F006DA01B /* README.md */; };
+		EEB63F852F3FE0230081F7E0 /* README-SOLUTION.md in Resources */ = {isa = PBXBuildFile; fileRef = EEB63F842F3FE0230081F7E0 /* README-SOLUTION.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,17 +25,18 @@
 		DB25D1D12EE912350075AACB /* UserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB25D1F12EEA7EF20075AACB /* UserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB633C722EECC74F006DA01B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EEB63F842F3FE0230081F7E0 /* README-SOLUTION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-SOLUTION.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DB25D1D32EE912350075AACB /* UserApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UserApp;
-			sourceTree = "<group>";
-		};
 		DB25D1F22EEA7EF20075AACB /* UserAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UserAppTests;
+			sourceTree = "<group>";
+		};
+		EEB63FAA2F40055C0081F7E0 /* UserApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UserApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -60,8 +62,9 @@
 		DB25D1C82EE912350075AACB = {
 			isa = PBXGroup;
 			children = (
+				EEB63F842F3FE0230081F7E0 /* README-SOLUTION.md */,
 				DB633C722EECC74F006DA01B /* README.md */,
-				DB25D1D32EE912350075AACB /* UserApp */,
+				EEB63FAA2F40055C0081F7E0 /* UserApp */,
 				DB25D1F22EEA7EF20075AACB /* UserAppTests */,
 				DB25D1D22EE912350075AACB /* Products */,
 			);
@@ -92,7 +95,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DB25D1D32EE912350075AACB /* UserApp */,
+				EEB63FAA2F40055C0081F7E0 /* UserApp */,
 			);
 			name = UserApp;
 			packageProductDependencies = (
@@ -168,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB63F852F3FE0230081F7E0 /* README-SOLUTION.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

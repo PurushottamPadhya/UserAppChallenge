@@ -9,7 +9,12 @@ import SwiftUI
 struct UserApp: App {
     var body: some Scene {
         WindowGroup {
-            UsersListView()
+            // Dependency Injection To UsersListView
+            let apiClient = APIClient()
+            let usersAPIClient = UsersAPIClient(apiClient: apiClient)
+            let viewModel = UsersViewModel(apiClient: usersAPIClient)
+            
+            UsersListView(viewModel: viewModel)
         }
     }
 }
